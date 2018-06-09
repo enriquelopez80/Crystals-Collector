@@ -71,12 +71,12 @@ $(document).ready(function () {
         if (totalScore === randomNumber) {
             alert('Aw yeah, you matched the number! You Won!');
             wins++;
-            $('#numWins').text("Wins: " + wins);
+            $('#numWins').text('Wins: ' + wins);
             reset();
         } else if (totalScore >= randomNumber) {
             alert('Dang it, you went over! Let\'s try again!');
             losses++;
-            $('#numLosses').text("Losses: " + losses);
+            $('#numLosses').text('Losses: ' + losses);
             reset();
         }
     }
@@ -85,7 +85,7 @@ $(document).ready(function () {
 
     function reset() {
         randomNumber = Math.floor(Math.random() * 101) + 19;
-        $("#random-score").text("Match This Score: " + randomNumber);
+        $('#random-score').text('Match This Score: ' + randomNumber);
         number1 = Math.floor(Math.random() * 12) + 1;
         number2 = Math.floor(Math.random() * 12) + 1;
         number3 = Math.floor(Math.random() * 12) + 1;
